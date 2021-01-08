@@ -4,7 +4,7 @@
 
 **Description of project goals**
 
-Our first Metis project was focused on data cleaning and exporatory data analysis (EDA). We were tasked with optimizing street team placement at MTA subway entrances to maximize awareness and reach for WTWY fundraising efforts and summer gala.
+Our first Metis project was focused on data cleaning and exploratory data analysis (EDA). We were tasked with optimizing street team placement at MTA subway entrances to maximize awareness and reach for WTWY fundraising efforts and summer gala.
 
 **Features and Target Variables:**
 
@@ -12,7 +12,7 @@ Our first Metis project was focused on data cleaning and exporatory data analysi
     - Looked at both daily and weekly trends from 03/23/19-06/01/19
 - Areas of high female population density
 - Areas of high median incomes
-- Areas where teh population has advanced degrees
+- Areas where the population has advanced degrees
 
 - A weighted algorithm was used to determine target stations that met all these criteria
 - Daily foot traffic trends for all stations were used to determine best days of week for street team implementation
@@ -29,6 +29,7 @@ Our first Metis project was focused on data cleaning and exporatory data analysi
 - Matplotlib
 - Seaborn
 - Geopy/Geopandas
+- Contextily
 - FuzzyWuzzy
 
 **Possible impacts of your project**
@@ -80,7 +81,20 @@ ACS Census Data
     - Jupiter notebook:
         - Census.ipynb
     - Pickle export:
-        - Df_census.pkl
+        - df_census.pkl
+- Combined Census data and NYC Open Data
+    - Import files:
+        - df_census.pkl
+        - tl_2019_36_tract.shp
+    - Jupiter notebook:
+        - Merge_SpatialJoins.ipynb
+ - Census Data Mapping for visualization
+    - Jupiter notebook
+        - Mapping_Census.ipynb
+    - Image files:
+        - Median Income - 25 years and over.svg
+        - Total Female Population - 25 years and over.svg
+        - Total Population - 25 years and over - Advanced Degrees.svg
 
 
 Merge MTA data with NYC Open Data/Census Data
