@@ -32,7 +32,15 @@ Our first Metis project was focused on data cleaning and exporatory data analysi
 - FuzzyWuzzy
 
 **Possible impacts of your project**
+- Impacts in the scope of the project:
+    - Determination of improved street team placement
+    -Concepts of how to future optimize street team placement
 
+- Personal/Professional impacts:
+    - Developing an understanding of different python pacakges
+    - Experience working on a data science project as part of a team
+    - Experience presenting a data science project to an audience
+    
 **Guide to our Repo**
 Project Slides
 - Metis Project 1.pdf
