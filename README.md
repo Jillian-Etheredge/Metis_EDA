@@ -50,12 +50,15 @@ MTA Data
 - MTA initial cleaning, EDA, and visualization
     - Jupyter Notebook:
         - MTA_EDA.ipynb
+        - MTA_Final.ipynb
     - Image files:
         - TURNSTILE_DAILY_ENTRIES.svg
         - GRD_CNTRL_DAILY.svg
         - GRD_CNTRL_DAILY_BY_WEEK.svg
         - TOP_STATIONS.svg
         - BUSIEST_DAY.svg
+    - Pickle export:
+        - final_mta_v1.pkl
 
 ACS Census Data
 - Education
@@ -105,3 +108,24 @@ Merge MTA data with NYC Open Data/Census Data
     - mta_nyc_open_match.ipynb
 - Export:
     - Final_merge_v2.csv
+    
+Apply Weighted Composite Score to 4 variables
+
+Methology:
+Variables           Weight
+Entries               5
+Female Population     3
+Median Income         3
+Advanced Degree       1
+
+1. Normalizing all 4 variables, based on Min-Max Scale
+2. Create Weighted_Rank_Score, based on the following formula:
+
+    Weighted_Rank_Score = 5*NM_Entries + 3*NM_Female + 3*NM_Income + 1*NM_Degree
+
+- Import files:
+    - final_merge_v2.pkl
+- Jupyter notebook:
+    - Apply_Weighted_Score.ipynb
+- Export:
+    - final_weighted_data.pkl
